@@ -32,7 +32,7 @@ This section gives a brief overview of the different methods that exist to corre
 
 1. Manual peak/trough correction
 
-As mentioned previously, automatic feature detection algorithms are susceptible to errors. Although it is more time-consuming and does not guarantee complete accuracy, manual  feature correction leverages the data curator’s expertise and contextual understanding of the research goals to resolve complex edge cases.
+As mentioned previously, automatic feature detection algorithms are susceptible to errors. Although it is more time-consuming and does not guarantee complete accuracy, manual feature correction leverages the data curator’s expertise and contextual understanding of the research goals to resolve complex edge cases.
 
 2. Interpolation
    
