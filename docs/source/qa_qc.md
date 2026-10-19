@@ -30,27 +30,27 @@ Concurrently recording multiple physiological modalities – such as cardiac and
 
 This section gives a brief overview of the different methods that exist to correct poor-quality physiological data segments. However, regardless of the chosen strategy, it is important to verify its effectiveness since it will influence the features or regressors that would later be computed. For example, if you are interested in heart rate variability, incorrect beat placement outweighs missing values (see [HeartPy’s simulation on the matter](https://python-heart-rate-analysis-toolkit.readthedocs.io/en/latest/heartrateanalysis.html#on-the-accuracy-of-peak-position); van Gent, Farah, Nes, & Arem, 2018a; van Gent, Farah, Nes, & van Arem, 2018b). In such a case, masking the segment might be a better option than interpolating a missed/incorrectly detected beat or manually correcting the peak if in doubt. Alternative metrics that are less affected by outliers could also be considered (e.g., instantaneous heart rate). Furthermore, it is important to consider that the influence of artefacts or deviations introduced during the recovery if the physiological signal may be attenuated in magnitude or temporally extended at later stages of the processing pipeline, particularly when the recovered signal is used to compute metrics within a sliding window or metrics subsequently convolved with an impulse response function.
 
-1. Manual peak/trough correction
+### 1. Manual peak/trough correction
 
 As mentioned previously, automatic feature detection algorithms are susceptible to errors. Although it is more time-consuming and does not guarantee complete accuracy, manual feature correction leverages the data curator’s expertise and contextual understanding of the research goals to resolve complex edge cases.
 
-2. Interpolation
+### 2. Interpolation
    
 Interpolation estimates missing values based on the surrounding data points and the chosen algorithm (e.g., linear, quadratic, cubic, nearest-neighbor). Consequently, interpolation must be applied cautiously when missing peaks occur during periods of high signal variance (irregular rhythms that could be biologically plausible) or rapid fluctuation. This method is also less reliable when applied to long segments. However, defining a ‘long’ segment remains context-dependent, as it depends on the specific metric of interest and whether it targets slow or fast dynamics (i.e., longer segments are more tolerable for lower frequency signals).
 
-3. Imputation
+### 3. Imputation
    
 Data imputation replaces missing or unreliable values using estimated or plausible values. These techniques can be useful to reconstruct missing signals when working with quasiperiodic signals. More and more algorithms based on deep learning have been developed in the past years, showing promising results (Xu et al., 2022). Nevertheless, much like interpolation, caution is necessary as imputed data can be speculative, particularly when applied over long gaps.
 
-4. Filtering
+### 4. Filtering
    
 The use of filtering strategies depends on the metrics of interest you may want to compute on your signals and the artifact type. For example, when calculating the derivative of the respiratory trace, filtering can be applied a priori if cardiac contamination is present. However, filter selection requires caution, as improper parameters can introduce signal distortion.
 
-5. Masking
+### 5. Masking
    
 The process of masking consists of replacing values in segments with zeros or NaN values. As discussed previously, masking might be preferred over interpolation or imputation depending on the metrics of interest. When working with physiological regressors, slightly padding or extending the masks helps account for temporal delays.
 
-6. Recovering signals from fMRI data
+### 6. Recovering signals from fMRI data
    
 If the physiological recordings are unusable across an entire run, deep learning can potentially reconstruct or infer these signals directly from the fMRI data. However, the feasibility of this approach depends on the specific signal of interest and the downstream application. For example, Wang and colleagues (2025) have proposed a framework for reconstructing low-frequency respiratory volume and heart rate time series from fMRI data. Other studies have also shown the feasibility of such an approach on different populations and using different machine/deep learning techniques (Addeh et al., 2023; Bayrak et al., 2020; Bayrak et al., 2021; Salas et al., 2020).
 
