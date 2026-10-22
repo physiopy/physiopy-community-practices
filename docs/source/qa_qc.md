@@ -52,7 +52,7 @@ The process of masking consists of replacing values in segments with zeros or Na
 
 ### 6. Recovering signals from fMRI data
    
-If the physiological recordings are unusable across an entire run, deep learning can potentially reconstruct or infer these signals directly from the fMRI data. However, the feasibility of this approach depends on the specific signal of interest and the downstream application. For example, Wang and colleagues (2025) have proposed a framework for reconstructing low-frequency respiratory volume and heart rate time series from fMRI data. Other studies have also shown the feasibility of such an approach on different populations and using different machine/deep learning techniques (Addeh et al., 2023; Bayrak et al., 2020; Bayrak et al., 2021; Salas et al., 2020).
+If the physiological recordings are unusable across an entire run, deep learning can potentially reconstruct or infer these signals directly from the fMRI data. However, the feasibility of this approach depends on the specific signal of interest and the downstream application. For example, Wang and colleagues (2025) have proposed a framework for reconstructing low-frequency respiratory volume and heart rate time series from fMRI data. Other studies have also shown the feasibility of such an approach on different populations and using different machine/deep learning techniques (Addeh et al., 2023; Aslan et al., 2019; Bayrak et al., 2020; Bayrak et al., 2021; Salas et al., 2020).
 
 ## Reporting data quality
 
