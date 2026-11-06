@@ -26,8 +26,7 @@ physiopy-community-guidelines
 [![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> If you use ``physiopy-community-guidelines`` in your work, please support it by citing the zenodo DOI of the version you used. You can find the latest version [here](https://doi.org/10.5281/zenodo.3470091)
-
+> If you use ``physiopy-community-guidelines`` in your work, please support it by citing the zenodo DOI of the version you used. You can find the latest version [here](https://doi.org/10.5281/zenodo.11373722)
 
 
 **We're looking for documentation contributors,** but any suggestion/bug report is welcome! Feel free to open issues!
