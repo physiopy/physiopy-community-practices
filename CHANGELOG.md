@@ -1,3 +1,34 @@
+# (Fri Nov 06 2026)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Rachael Stickland ([@RayStick](https://github.com/RayStick)), for all your work!
+
+#### ⚠️ Pushed to `master`
+
+- int: Fix autorc ([@smoia](https://github.com/smoia))
+- int: Update gitignore ([@smoia](https://github.com/smoia))
+- int: Fix type of publication in Zenodo ([@smoia](https://github.com/smoia))
+- int: Update workflows and setup ([@smoia](https://github.com/smoia))
+- int: Remove python publish workflow ([@smoia](https://github.com/smoia))
+
+#### 📝 Documentation
+
+- Add QA/QC community practices document [#24](https://github.com/physiopy/physiopy-community-practices/pull/24) ([@RayStick](https://github.com/RayStick) [@me-pic](https://github.com/me-pic))
+- Add welcome bot [#11](https://github.com/physiopy/physiopy-community-practices/pull/11) ([@RayStick](https://github.com/RayStick))
+
+#### 🏠 Internal
+
+- Fix broken links [#10](https://github.com/physiopy/physiopy-community-practices/pull/10) ([@me-pic](https://github.com/me-pic))
+
+#### Authors: 3
+
+- Marie-Eve Picard ([@me-pic](https://github.com/me-pic))
+- Rachael Stickland ([@RayStick](https://github.com/RayStick))
+- Stefano Moia ([@smoia](https://github.com/smoia))
+
+---
+
 # 2024.0.1 (Wed Jun 19 2024)
 
 #### 🐛 Bug Fix
