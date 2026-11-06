@@ -1,4 +1,4 @@
-# (Fri Nov 06 2026)
+# 2026.0.0 (Fri Nov 06 2026)
 
 :tada: This release contains work from a new contributor! :tada:
 
