@@ -7,9 +7,9 @@
     ["pr-body-labels", { "disabledLabels": ["release", "Release", "Released", "Prereleased", "Skip release"] }]
   ],
   "owner": "physiopy",
-  "repo": "physiopy-community-guidelines",
-  "name": "Stefano Moia",
-  "email": "s.moia.research@gmail.com",
+  "repo": "physiopy-community-practices",
+  "name": "Physiopy",
+  "email": "physiopy.community@gmail.com",
   "labels": [
     {
       "name": "Majormod",
